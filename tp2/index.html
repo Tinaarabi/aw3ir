@@ -11,12 +11,12 @@
     TP #2
 
   </h1>
-  <form >
+  <form action="action.html" method="get">
     <label for="nom">Nom :</label> 
     <input type="text" name="nom" id="nom"  
     minlength="2"
     maxlength="20"
-    required pattern="banane|cerise" oninvalid="this.setCustomValidity('tebeg')"
+    required  oninvalid="this.setCustomValidity('tebeg')"
     oninput="this.setCustomValidity('')"/>
     <span class="icon-ok">✔</span>
 
@@ -44,19 +44,20 @@
     required>
     <span class="icon-ok">✔</span>
         <br><br>
-
-    <label for="mail">Mail :</label>
-    <input type="email" name="mail" id="mail"
-    minlength="3"
-    maxlength="50"
-    oninvalid="this.setCustomValidity('Veuillez Saisir une adresse mail mon chers')"
-    oninput="this.setCustomValidity('')"
-    required  />
-    <span class="icon-ok">✔</span> 
+        <label for="mail">Mail:</label>
+        <input type="email" name="mail" id="mail"
+        minlength="5"
+        maxlength="30"
+        required oninvalid="this.setCustomValidity('tebeg')"
+        oninput="this.setCustomValidity('')"/> 
+        <span class="icon-ok">✔</span>
+            <br><br>
+    
+    
         <br><br>
 
-    <label for="envoie">Envoyer :</label>
-    <input type="submit" name="envoie" id="envoie">
+    <label for="envoie"></label>
+    <input type="submit" name="envoie" id="envoie"   class="btn-primary">
   </form>
 </body>
 </html>
